@@ -6,7 +6,7 @@ Build a full-stack AI-powered mobile application that:
 	•	Generates compatible outfits from their own closet
 	•	Learns user preferences via swipe feedback
 	•	Scales toward real-time, high-performance recommendation systems
-    -   1
+    -   
 
 This project is designed to develop strong skills in:
 	•	Backend engineering
@@ -14,7 +14,7 @@ This project is designed to develop strong skills in:
 	•	Database modeling
 	•	Machine learning systems
 	•	Performance optimization
-	•	GPU acceleration (advanced stage)
+	
 
 ⸻
 
@@ -156,10 +156,7 @@ Mid-Term:
 	•	Vector indexing
 	•	Cached pair compatibility
 
-Advanced:
-	•	Parallel scoring of large outfit sets
-	•	GPU acceleration (CUDA)
-	•	10⁶ combination evaluation target
+
 
 ⸻
 
@@ -256,21 +253,6 @@ Mobile:
 	•	React Native / Flutter
 
 ⸻
-
-9. Metrics of Success
-
-Technical:
-	•	Stable API
-	•	Persistent data
-	•	<200ms response time
-	•	Successful image ingestion
-	•	Embedding-based retrieval working
-
-Product:
-	•	Generates meaningful outfits
-	•	Learns from feedback
-	•	Handles 100+ items per user
-
 ⸻
 
 10. Long-Term Vision
