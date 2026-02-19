@@ -3,5 +3,4 @@ __pycache__/
 *.pyc
 uploads/
 .env
-PROJECT.md
-CLAUDE.md
+.pytest_cache/

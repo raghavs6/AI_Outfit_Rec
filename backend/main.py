@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException, UploadFile, File, Form
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 from typing import Dict, List, Optional, Set
@@ -10,6 +11,13 @@ import random
 import uuid
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 USERS: Dict[str, dict] = {}
 ITEMS: Dict[str, List[dict]] = {}
 EXTERNAL_IMAGES: Dict[str, dict] = {}
