@@ -7,6 +7,7 @@
 - Never commit secrets. Use `.env` locally and `.env.example` in repo.
 - This repo uses .gitignore. Do not add ignored files or suggest committing them.
 - If you make a mistake update claude code so you dont make that mistake again
+- Always reset default browser styles (e.g., `body { margin: 0; padding: 0; }`) in global CSS when setting up frontend projects to avoid unintended white edges.
 
 ## Output requirements
 
