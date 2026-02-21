@@ -43,9 +43,7 @@ Mobile App (React Native / Flutter)
 ↓
 FastAPI Backend (REST API)
 ↓
-PostgreSQL Database
-↓
-Image Storage (Local → S3)
+Supabase (PostgreSQL, Auth, & Storage)
 ↓
 ML Pipeline
 	•	Embedding extraction
@@ -61,10 +59,9 @@ Outfit Generation Engine
 4.1 Backend (FastAPI)
 
 Responsibilities:
-	•	User management
-	•	Closet item storage
-	•	Image upload + validation
-	•	Static file serving
+	•	Supabase Auth integration
+	•	Closet item storage (Supabase DB)
+	•	Image upload to Supabase Storage
 	•	Recommendation endpoints
 	•	Feedback capture
 
@@ -78,7 +75,7 @@ Key Concepts:
 
 ⸻
 
-4.2 Database (PostgreSQL)
+4.2 Database (Supabase PostgreSQL)
 
 Tables (Planned):
 
@@ -113,8 +110,8 @@ Concepts:
 
 Stage 1:
 	•	Upload via multipart/form-data
-	•	Save to disk
-	•	Serve via static route
+	•	Upload directly to Supabase Storage
+	•	Store public URL in Supabase DB
 
 Stage 2:
 	•	Background removal
@@ -193,14 +190,13 @@ Systems Engineering
 
 Phase 1 – Backend Foundations
 	•	FastAPI setup
-	•	Guest users
-	•	Image upload
-	•	Static serving
+	•	Supabase Auth setup
+	•	Supabase Storage integration
 
 Phase 2 – Persistent Storage
-	•	PostgreSQL integration
-	•	SQLAlchemy models
-	•	Migrations
+	•	Supabase PostgreSQL integration
+	•	Database models / schema
+	•	Migrations (Supabase CLI)
 
 Phase 3 – ML Integration
 	•	Embedding extraction
@@ -235,8 +231,8 @@ Backend:
 	•	Uvicorn
 
 Database:
-	•	PostgreSQL
-	•	SQLAlchemy
+	•	Supabase PostgreSQL
+	•	Supabase Python Client / SQLAlchemy
 	•	(Planned) pgvector / FAISS
 
 ML:
